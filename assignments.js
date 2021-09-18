@@ -15,33 +15,46 @@ console.log(population >= finlandPopulation); //question 3 answer
 let averagePopulation = 33
 console.log(population <= averagePopulation); //question 4 answer
 
-//question 5 answer
+/*question 5 answer
 const description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language
 console.log(description);
 
 //question strings and template literal answer leon 
 /*const descriptionRe = `${country} is in ${continent}, and its ${population} million people speak ${language}`
 console.log(descriptionRe)
-*/
+
 
 //question strings and template literal my answer 
+const description = `${country} is in ${continent}, and it's ${population} million people speak ${language}`;
+console.log(description);
+
+//Taking Decisions: if / else Statements - contients  
+if (population > 33) {
+    console.log(`${country}'s population is above average`);
+} else {
+    console.log(`${country}'s population is ${(33 - population)} million below average `);
+}
+*/
+
+//BMI questions:
 
 
-
-
-/*const markMass = 78;
+const markMass = 78;
+const johnMass = 92;
 const markHeight = 1.69;
+const johnHeight = 1.95;
 const markBMI = markMass / (markHeight * markHeight);
+const johnBMI = johnMass / (johnHeight * johnHeight)
 console.log('markBMI is - ' + markBMI);
 
-
-const johnMass = 92;
-const johnHeight = 1.95;
-const johnBMI = johnMass / (johnHeight * johnHeight)
 console.log('john BMI is - ' + johnBMI );
 const markHigherBMI = markBMI > johnBMI
 console.log(markHigherBMI);
-*/
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
+} else {
+    console.log(`John's BMI is higher than Mark's!`);
+}
 
 
 
